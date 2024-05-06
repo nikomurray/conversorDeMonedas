@@ -19,6 +19,7 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
+        final String apiKey = "19a05854891b0b2938b03b23";
 
         while (true) {
             // Menu bienvenida
@@ -40,8 +41,8 @@ public class Main {
 
             // Devolver informacion
             Convertidor convertidor = new Convertidor(opcion , valor);
-
-
+            convertidor.convertir_valor();
+            convertidor.solicitarInfo();
         }
     }
 }
